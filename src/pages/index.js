@@ -3,7 +3,6 @@ import Layout from "../components/Layout";
 import Button from "../components/Button";
 
 function Index() {
-
   function handleClick(ref) {
     console.log(ref)
   }

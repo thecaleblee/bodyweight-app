@@ -13,11 +13,19 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "dependencies": {
+    "dgram": "^1.0.1",
+    "dns": "^0.2.2",
+    "fs": "0.0.1-security",
     "gatsby": "^2.1.24",
+    "module": "^1.2.5",
+    "monk": "^6.0.6",
+    "net": "^1.0.2",
     "react": "^16.8.4",
-    "react-dom": "^16.8.4"
+    "react-dom": "^16.8.4",
+    "tls": "0.0.1"
   },
   "devDependencies": {
+    "gatsby-source-mongodb": "^2.0.14",
     "prettier": "^1.16.4"
   },
   "repository": {
