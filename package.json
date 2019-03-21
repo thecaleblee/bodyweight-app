@@ -1,40 +1,19 @@
 {
-  "name": "gatsby-starter-hello-world",
-  "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
-  "version": "0.1.0",
-  "license": "MIT",
+  "name": "bodyweight",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write src/**/*.{js,jsx}",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
-  },
-  "dependencies": {
-    "dgram": "^1.0.1",
-    "dns": "^0.2.2",
-    "fs": "0.0.1-security",
-    "gatsby": "^2.1.24",
-    "gatsby-source-filesystem": "^2.0.27",
-    "gatsby-transformer-json": "^2.1.11",
-    "module": "^1.2.5",
-    "monk": "^6.0.6",
-    "net": "^1.0.2",
-    "react": "^16.8.4",
-    "react-dom": "^16.8.4",
-    "tls": "0.0.1"
-  },
-  "devDependencies": {
-    "gatsby-source-mongodb": "^2.0.14",
-    "prettier": "^1.16.4"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+    "url": "git+https://github.com/thecaleblee/bodyweight-app.git"
   },
+  "author": "",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
-  }
+    "url": "https://github.com/thecaleblee/bodyweight-app/issues"
+  },
+  "homepage": "https://github.com/thecaleblee/bodyweight-app#readme"
 }
