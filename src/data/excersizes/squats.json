@@ -1,0 +1,30 @@
+{
+  "name": "Squats",
+  "versions": [
+    {
+      "id":   "01",
+      "name": "Assisted Squat",
+      "file": "sv1"
+    },
+    {
+      "id":   "02",
+      "name": "Deep Assisted Squat",
+      "file": "sv2"
+    },
+    {
+      "id":   "03",
+      "name": "Squats",
+      "file": "sv3"
+    },
+    {
+      "id":   "04",
+      "name": "Deep Squats",
+      "file": "sv4"
+    },
+    {
+      "id":   "05",
+      "name": "Bulgarian split Squats",
+      "file": "sv5"
+    }
+  ]
+}

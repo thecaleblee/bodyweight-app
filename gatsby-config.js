@@ -1,8 +1,11 @@
 module.exports = {
   plugins: [
+    `gatsby-transformer-json`,
     {
-      resolve: `gatsby-source-mongodb`,
-      options: { dbName: `db_bodyweight`, collection: `users` },
-    }, 
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `./src/data/`,
+      },
+    },
   ],
 }

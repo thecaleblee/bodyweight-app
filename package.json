@@ -17,6 +17,8 @@
     "dns": "^0.2.2",
     "fs": "0.0.1-security",
     "gatsby": "^2.1.24",
+    "gatsby-source-filesystem": "^2.0.27",
+    "gatsby-transformer-json": "^2.1.11",
     "module": "^1.2.5",
     "monk": "^6.0.6",
     "net": "^1.0.2",
