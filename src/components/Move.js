@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import squats from '../data/squats.json'
+import Image from '../components/Image'
 
 function Move(props) {
   const [ moveId, setMoveId ] = useState("v" + props.id)
@@ -10,7 +11,13 @@ function Move(props) {
     switch (_move) {
       case ("squats"):
         return move = squats.versions.filter(m => m.id === moveId).map(v => {
-          return <><h1 key={v.id}>{v.name}</h1><h4>{v.id}</h4></>
+          return (
+            <>
+              <Image url={_move} id={v.id} />
+              <h1 key={v.id}>{v.name}</h1>
+              <h4>{v.id}</h4>
+            </>
+          )
         })
         default: return
     }

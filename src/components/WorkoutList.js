@@ -48,7 +48,7 @@ function WorkoutList() {
             key={move.id}
             id={move.id}
             name={move.name}
-            />  
+          />  
         )}
       </div>
     </>
