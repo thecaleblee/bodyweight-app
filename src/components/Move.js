@@ -23,10 +23,6 @@ function Move(props) {
     }
   }
 
-    //return squats.map(v => {
-    //  v.name
-    //})
-
   return (
     <>
       {generateMoves(move)}

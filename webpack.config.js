@@ -1,9 +1,14 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
+const CopyPlugin = require('copy-webpack-plugin');
 
 const htmlPlugin = new HtmlWebPackPlugin({
   template: "./src/index.html",
   filename: "./index.html"
 });
+
+const imagePlugin = new CopyPlugin([
+  {from:'./src/static', to:'static'} 
+]);
 
 module.exports = {
   module: {
@@ -37,12 +42,12 @@ module.exports = {
         test: /\.(png|jpg|gif)$/,
         loader: 'file-loader',
         options: {
-          outputPath: 'images',
+          outputPath: 'static',
         }
       },
     ]
   },
-  plugins: [htmlPlugin],
+  plugins: [htmlPlugin, imagePlugin],
   devServer: {
     contentBase: './dist',
     hot: true,
