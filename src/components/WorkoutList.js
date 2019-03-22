@@ -8,14 +8,39 @@ function WorkoutList() {
       id: 1,
       name: "squats"
     },
-{
-      id: 2,
+    {
+      id: 1,
       name: "pullups"
-    }
+    },
+    {
+      id: 1,
+      name: "handstandpushups"
+    },
+    {
+      id: 1,
+      name: "legraises"
+    },
+    {
+      id: 1,
+      name: "pushups"
+    },
+    {
+      id: 1,
+      name: "horizontalpulls"
+    },
+    {
+      id: 1,
+      name: "plank"
+    },
   ])
 
   return (
     <>
+      <style>{`
+        .list-area {
+          overflow-y: scroll;
+        }
+      `}</style>
       <div>
         Toggle { alternateDay ? 'second' : 'first'}
       </div>
@@ -23,9 +48,9 @@ function WorkoutList() {
         Date information
       </div>
       <div className="list-area">
-        {displayList.map(move => 
+        {displayList.map( (move, i ) => 
           <Move
-            key={move.id}
+            key={i}
             id={move.id}
             name={move.name}
           />  
