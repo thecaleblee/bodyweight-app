@@ -1,57 +1,61 @@
 {
-  "name": "Squats",
+  "name": "Pull Ups",
   "versions": [
     {
       "id":   "v1",
-      "name": "Assisted Squat"
+      "name": "Leg Assisted Pull Up"
     },
     {
       "id":   "v2",
-      "name": "Deep Assisted Squat"
+      "name": " Pull Up"
     },
     {
       "id":   "v3",
-      "name": "Squats"
+      "name": " Pull Up"
     },
     {
       "id":   "v4",
-      "name": "Deep Squats"
+      "name": " Pull Up"
     },
     {
       "id":   "v5",
-      "name": "Bulgarian split Squats"
+      "name": " Pull Up"
     },
     {
       "id":   "v6",
-      "name": "x"
+      "name": " Pull Up"
     },
     {
       "id":   "v7",
-      "name": "x"
+      "name": " Pull Up"
     },
     {
       "id":   "v8",
-      "name": "x"
+      "name": " Pull Up"
     },
     {
       "id":   "v9",
-      "name": "x"
+      "name": " Pull Up"
     },
     {
       "id":   "v10",
-      "name": "x"
+      "name": " Pull Up"
     },
     {
       "id":   "v11",
-      "name": "x"
+      "name": " Pull Up"
     },
     {
       "id":   "v12",
-      "name": "x"
+      "name": " Pull Up"
     },
     {
       "id":   "v13",
-      "name": "x"
+      "name": " Pull Up"
+    },
+    {
+      "id":   "v14",
+      "name": " Pull Up"
     }
   ] 
 }

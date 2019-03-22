@@ -1,26 +1,22 @@
 import React, { useState } from 'react'
-import squats from '../data/squats.json'
 import Image from '../components/Image'
 
 function Move(props) {
-  const [ moveId, setMoveId ] = useState("v" + props.id)
+  const [ moveId, setMoveId ] = useState(`v${props.id}`)
 
   let move = props.name 
+  const moveJson = require(`../data/${move}.json`)
 
   function generateMoves(_move) {
-    switch (_move) {
-      case ("squats"):
-        return move = squats.versions.filter(m => m.id === moveId).map(v => {
-          return (
-            <>
-              <Image url={_move} id={v.id} />
-              <h1 key={v.id}>{v.name}</h1>
-              <h4>{v.id}</h4>
-            </>
-          )
-        })
-        default: return
-    }
+    return move = moveJson.versions.filter(m => m.id === moveId).map(v => {
+      return (
+        <>
+          <Image url={_move} id={v.id} />
+          <h1 key={v.id}>{v.name}</h1>
+          <h4>{v.id}</h4>
+        </>
+      )
+    })
   }
 
   return (
