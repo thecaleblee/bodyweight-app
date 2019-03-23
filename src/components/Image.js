@@ -5,7 +5,7 @@ function Image(props) {
 
   useEffect(() => {
     setSrc(`/static/${props.url}/${props.id}.jpg`)
-  }, [props.id])
+  }, [props.id, props.url])
 
   return <img src={src} alt={`${props.url} ${props.id}`} />
 }

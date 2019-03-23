@@ -32,15 +32,66 @@ function Move(props) {
         <div className="display-block">
           <style>{`
             .display-block {
+              background: #fff;
+              border: 1px solid #ccc;
+              padding: 3px;
               display: block;
+              margin-top: 10px;
+              border-radius: 3px;
+            }
+            .display-block:first-child {
+              margin-top: 20px;
+            }
+            .display-block::after {
+              content: '';
+              clear: both;
+              display: block;
+              width: 100%;
+              clear: both;
+            }
+            img {
+              float: left;
+              height: 128px;
+              width: 170px;
+              border-radius: 2px 0 0 2px;
+              border-right: 1px solid #ccc;
+            }
+            h1 {
+              padding-left: 185px;
+              font-size: 14px;
+              font-family: sans-serif;
+            }
+            h4 {
+              padding-left: 185px;
+            }
+            .button-group button {
+              background: #fefefe;
+              float: right;
+              border: 1px solid #ddd;
+              border-left: none;
+              border-right: none;
+              display: block;
+              padding: 12px 16px;
+            }
+            .button-group button:nth-child(3) {
+              border-radius: 6px 0 0 6px;
+              border-right: 1px solid #ddd;
+              border-left: 1px solid #ddd;
+            }
+            .button-group button:first-child {
+              border-radius: 0 6px 6px 0;
+              border-right: 1px solid #ddd;
+              border-left: 1px solid #ddd;
             }
           `}</style>
           <Image url={_move} id={v.id} />
           <h1 key={v.id}>{v.name}</h1>
           <h4>{v.id}</h4>
-          <button onClick={setLevel} name="A">{levelA}</button>
-          <button onClick={setLevel} name="B">{levelB}</button>
-          <button onClick={setLevel} name="C">{levelC}</button>
+          <div className="button-group">
+            <button onClick={setLevel} name="A">{levelA}</button>
+            <button onClick={setLevel} name="B">{levelB}</button>
+            <button onClick={setLevel} name="C">{levelC}</button>
+          </div>
         </div>
       )
     })

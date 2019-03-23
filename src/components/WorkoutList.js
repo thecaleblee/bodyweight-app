@@ -83,17 +83,31 @@ function WorkoutList() {
     dayOne.length  && dayTwo.length ?
     <>
       <style>{`
+        .sub-header {
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          padding-top: 10px;
+          height: 40px;
+          background: rgba(255,255,255,0.9)
+        }
         .list-area {
           overflow-y: scroll;
+          background: #dfdfdf;
+          margin: 0 -7px;
+          padding: 0 4px;
         }
       `}</style>
-      <div>
-        <a onClick={updateList}>
-          { alternateDay ? 'second' : 'first'}
-        </a>
-      </div>
-      <div>
-        Date information
+        <div className="sub-header">
+        <div>
+          <a onClick={updateList}>
+            { alternateDay ? 'second' : 'first'}
+          </a>
+        </div>
+        <div>
+          Date information
+        </div>
       </div>
       <div className="list-area">
         {displayList.map( (move, i ) => 
