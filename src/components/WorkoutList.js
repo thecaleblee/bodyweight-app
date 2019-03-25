@@ -71,9 +71,9 @@ function WorkoutList() {
     e.preventDefault() 
     setAlternateDay(!alternateDay)
     alternateDay ?
-    setDisplayList(dayOne)
+      setDisplayList(dayOne)
     :
-    setDisplayList(dayTwo)
+      setDisplayList(dayTwo)
   }
 
   useEffect(() => {

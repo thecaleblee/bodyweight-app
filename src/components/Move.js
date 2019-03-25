@@ -17,17 +17,22 @@ function Move(props) {
 
     switch (level) {
       case ("A"):
-        return setlevelA(lvl => lvl + 1)
+        const newLevelA = levelA => levelA + 1
+        return setlevelA(newLevelA)
       case ("B"):
-        return setlevelB(lvl => lvl + 1) 
+        const newLevelB = levelB => levelB + 1
+        return setlevelB(newLevelB)
       case ("C"):
-        return setlevelC(lvl => lvl + 1)
+        const newLevelC = levelC => levelC + 1
+        return setlevelC(newLevelC)
       default: return
     }
   }
 
   function generateMoves(_move) {
-    return move = moveJson.versions.filter(m => m.id === moveId).map(v => {
+    return move = moveJson.versions
+      .filter(m => m.id === moveId)
+      .map(v => {
       return (
         <div className="display-block">
           <style>{`
@@ -88,9 +93,9 @@ function Move(props) {
           <h1 key={v.id}>{v.name}</h1>
           <h4>{v.id}</h4>
           <div className="button-group">
-            <button onClick={setLevel} name="A">{levelA}</button>
-            <button onClick={setLevel} name="B">{levelB}</button>
             <button onClick={setLevel} name="C">{levelC}</button>
+            <button onClick={setLevel} name="B">{levelB}</button>
+            <button onClick={setLevel} name="A">{levelA}</button>
           </div>
         </div>
       )
