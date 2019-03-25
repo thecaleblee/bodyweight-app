@@ -3,55 +3,55 @@
   "versions": [
     {
       "id":   "v1",
-      "name": "Assisted Squat"
+      "name": "Bent knee bench dips"
     },
     {
       "id":   "v2",
-      "name": "Deep Assisted Squat"
+      "name": "Straight legs bench dips"
     },
     {
       "id":   "v3",
-      "name": "Squats"
+      "name": "One elevated leg, straight legs dips"
     },
     {
       "id":   "v4",
-      "name": "Deep Squats"
+      "name": "Elevated legs bench dips"
     },
     {
       "id":   "v5",
-      "name": "Bulgarian split Squats"
+      "name": "One extended leg, elevated legs dips"
     },
     {
       "id":   "v6",
-      "name": "x"
+      "name": "Legs supported dips"
     },
     {
       "id":   "v7",
-      "name": "x"
+      "name": "One leg supported dips"
     },
     {
       "id":   "v8",
-      "name": "x"
+      "name": "Jumping and 5s eccentric dips"
     },
     {
       "id":   "v9",
-      "name": "x"
+      "name": "Half dips (top half)"
     },
     {
       "id":   "v10",
-      "name": "x"
+      "name": "Dips"
     },
     {
       "id":   "v11",
-      "name": "x"
+      "name": "Legs forward dips"
     },
     {
       "id":   "v12",
-      "name": "x"
+      "name": "Modified Russian dips"
     },
     {
       "id":   "v13",
-      "name": "x"
+      "name": "Russian dips"
     }
   ]
 }
