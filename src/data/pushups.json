@@ -3,55 +3,63 @@
   "versions": [
     {
       "id":   "v1",
-      "name": "Assisted Squat"
+      "name": "Wall push ups"
     },
 {
       "id":   "v2",
-      "name": "Deep Assisted Squat"
+      "name": "Box push ups"
     },
     {
       "id":   "v3",
-      "name": "Squats"
+      "name": "Three quarter push ups"
     },
     {
       "id":   "v4",
-      "name": "Deep Squats"
+      "name": "3/4 push ups + 5s eccentrics"
     },
     {
       "id":   "v5",
-      "name": "Bulgarian split Squats"
+      "name": "3/4 push ups + 5s eccentrics"
     },
     {
       "id":   "v6",
-      "name": "x"
+      "name": "Elbows in push ups"
     },
     {
       "id":   "v7",
-      "name": "x"
+      "name": "Diamond push ups"
     },
     {
       "id":   "v8",
-      "name": "x"
+      "name": "Uneven push ups"
     },
     {
       "id":   "v9",
-      "name": "x"
+      "name": "Decline push ups"
     },
     {
       "id":   "v10",
-      "name": "x"
+      "name": "Decline elbows in push ups"
     },
     {
       "id":   "v11",
-      "name": "x"
+      "name": "Decline diamond push ups"
     },
     {
       "id":   "v12",
-      "name": "x"
+      "name": "Wall one arm push ups"
     },
     {
       "id":   "v13",
-      "name": "x"
+      "name": "Incline one arm push ups"
+    },
+    {
+      "id":   "v14",
+      "name": "One arm push ups"
+    },
+    {
+      "id":   "v15",
+      "name": "Decline one arm push ups"
     }
   ]
 }

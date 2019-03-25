@@ -3,55 +3,51 @@
   "versions": [
     {
       "id":   "v1",
-      "name": "Assisted Squat"
+      "name": "Flat knee raises"
     },
     {
       "id":   "v2",
-      "name": "Deep Assisted Squat"
+      "name": "Flat bent leg raises"
     },
     {
       "id":   "v3",
-      "name": "Squats"
+      "name": "Flat straight leg raises"
     },
     {
       "id":   "v4",
-      "name": "Deep Squats"
+      "name": "Forearm knee raises"
     },
     {
       "id":   "v5",
-      "name": "Bulgarian split Squats"
+      "name": "Hanging knee raises"
     },
     {
       "id":   "v6",
-      "name": "x"
+      "name": "Forearm bent leg raises"
     },
     {
       "id":   "v7",
-      "name": "x"
+      "name": "Forearm straight leg raises"
     },
     {
       "id":   "v8",
-      "name": "x"
+      "name": "Hanging straight leg raises"
     },
     {
       "id":   "v9",
-      "name": "x"
+      "name": "Hanging bent leg V-raises"
     },
     {
       "id":   "v10",
-      "name": "x"
+      "name": "Hanging straight leg V-raises"
     },
     {
       "id":   "v11",
-      "name": "x"
+      "name": "Hanging V-raise windshield wipers"
     },
     {
       "id":   "v12",
-      "name": "x"
-    },
-    {
-      "id":   "v13",
-      "name": "x"
+      "name": "One arm hanging leg raises"
     }
   ]
 }
