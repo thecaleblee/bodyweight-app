@@ -2,5 +2,5 @@
 Start Bodyweight Infographic Companion App
 
 ## To use
-`npm i`
-`npm run start`
+* `npm i`
+* `npm run start`
