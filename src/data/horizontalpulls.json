@@ -3,55 +3,55 @@
   "versions": [
     {
       "id":   "v1",
-      "name": "Assisted Squat"
+      "name": "Vertical pulls"
     },
     {
       "id":   "v2",
-      "name": "Deep Assisted Squat"
+      "name": "Vertical pulls with a towel"
     },
     {
       "id":   "v3",
-      "name": "Squats"
+      "name": "Inverted rows, legs bent"
     },
     {
       "id":   "v4",
-      "name": "Deep Squats"
+      "name": "Inverted rows, straight legs"
     },
     {
       "id":   "v5",
-      "name": "Bulgarian split Squats"
+      "name": "Inverted rows, one leg extended"
     },
     {
       "id":   "v6",
-      "name": "x"
+      "name": "Inverted rows, legs elevated"
     },
     {
       "id":   "v7",
-      "name": "x"
+      "name": "Legs elevated, one leg extended"
     },
     {
       "id":   "v8",
-      "name": "x"
+      "name": "Tuck knees, front lever row"
     },
     {
       "id":   "v9",
-      "name": "x"
+      "name": "Advanced tuck knees rows"
     },
     {
       "id":   "v10",
-      "name": "x"
+      "name": "One tuck knee, one leg extended rows"
     },
     {
       "id":   "v11",
-      "name": "x"
+      "name": "Straddle legs front lever rows"
     },
     {
       "id":   "v12",
-      "name": "x"
+      "name": "Front lever rows"
     },
     {
       "id":   "v13",
-      "name": "x"
+      "name": ""
     }
   ]
 }
