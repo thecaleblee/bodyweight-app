@@ -4,6 +4,54 @@
     {
       "id":   "v1",
       "name": "Assisted Squat"
+    },
+    {
+      "id":   "v2",
+      "name": "Deep Assisted Squat"
+    },
+    {
+      "id":   "v3",
+      "name": "Squats"
+    },
+    {
+      "id":   "v4",
+      "name": "Deep Squats"
+    },
+    {
+      "id":   "v5",
+      "name": "Bulgarian split Squats"
+    },
+    {
+      "id":   "v6",
+      "name": "x"
+    },
+    {
+      "id":   "v7",
+      "name": "x"
+    },
+    {
+      "id":   "v8",
+      "name": "x"
+    },
+    {
+      "id":   "v9",
+      "name": "x"
+    },
+    {
+      "id":   "v10",
+      "name": "x"
+    },
+    {
+      "id":   "v11",
+      "name": "x"
+    },
+    {
+      "id":   "v12",
+      "name": "x"
+    },
+    {
+      "id":   "v13",
+      "name": "x"
     }
   ]
 }
