@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import Image from '../components/Image'
-
+import useLocalStorage from '../components/useLocalStorage' 
 function Move(props) {
-  const [ moveId, setMoveId ] = useState(`v${props.id}`)
+  const [ moveId, setMoveId ] = useState(useLocalStorage("moveId", `v${props.id}`))
+
   const [ prevLevel, setPrevLevel ] = useState(moveId)
   const [ levelA, setlevelA ] = useState(1)
   const [ levelB, setlevelB ] = useState(1)
