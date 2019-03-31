@@ -3,6 +3,7 @@ import Image from '../components/Image'
 
 function Move(props) {
   const [ moveId, setMoveId ] = useState(`v${props.id}`)
+  const [ prevLevel, setPrevLevel ] = useState(moveId)
   const [ levelA, setlevelA ] = useState(1)
   const [ levelB, setlevelB ] = useState(1)
   const [ levelC, setlevelC ] = useState(1)
@@ -13,7 +14,6 @@ function Move(props) {
   function setLevel(e) {
     e.preventDefault()
     let level = e.target.name;
-        setMoveId(`v${levelC}`)
 
     switch (level) {
       case ("A"):
@@ -27,6 +27,22 @@ function Move(props) {
         return setlevelC(newLevelC)
       default: return
     }
+  }
+
+  function nextLevel() {
+    let tempMove = (parseInt(moveId.split('v', 2)[1] , 10) + 1);
+    setPrevLevel(moveId)
+    setMoveId(`v${tempMove}`)
+  }
+
+  function previousLevel() {
+    let tempMove = (parseInt(moveId.split('v', 2)[1] , 10) - 1);
+    setPrevLevel(tempMove - 1)
+    console.log(tempMove);
+    setMoveId(`v${tempMove}`)
+    setlevelA(5)
+    setlevelB(5)
+    setlevelC(5)
   }
 
   function generateMoves(_move) {
@@ -69,6 +85,11 @@ function Move(props) {
             h4 {
               padding-left: 185px;
             }
+            h6 {
+              float: left;
+              margin: 0;
+              padding-left: 14px;
+            }
             .button-group button {
               background: #fefefe;
               float: right;
@@ -77,6 +98,12 @@ function Move(props) {
               border-right: none;
               display: block;
               padding: 12px 16px;
+              user-select: none;
+              -moz-user-select: none;
+              -webkit-user-select: none;
+              -ms-user-select: none;
+              outline: none !important;
+              cursor: pointer;
             }
             .button-group button:nth-child(3) {
               border-radius: 6px 0 0 6px;
@@ -91,7 +118,7 @@ function Move(props) {
           `}</style>
           <Image url={_move} id={v.id} />
           <h1 key={v.id}>{v.name}</h1>
-          <h4>{v.id}</h4>
+          <h4>{v.id}</h4> {moveId != "v1" ? <h6><a onClick={previousLevel}>( back to {prevLevel}? )</a></h6> : ''}
           <div className="button-group">
             <button onClick={setLevel} name="C">{levelC}</button>
             <button onClick={setLevel} name="B">{levelB}</button>
@@ -103,8 +130,8 @@ function Move(props) {
   }
 
   useEffect(()=> {
-    console.log("A ", levelA, "  B", levelB, "  C ", levelC)
     if ( levelA > 7 && levelB > 7 && levelC > 7 ) {
+      nextLevel()
       generateMoves(moveId)
       setlevelA(1)
       setlevelB(1)
