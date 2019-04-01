@@ -1,5 +1,6 @@
 {
   "name": "Plank",
+  "storeId": "plankId",
   "versions": [
     {
       "id":   "v1",

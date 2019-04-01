@@ -1,5 +1,6 @@
 {
   "name": "Leg Raises",
+  "storeId": "legraisesId",
   "versions": [
     {
       "id":   "v1",

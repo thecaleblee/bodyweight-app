@@ -6,15 +6,14 @@ function Move(props) {
   let move = props.name 
   const moveJson = require(`../data/${move}.json`)
 
-  const [ moveId, setMoveId ] = useState(useLocalStorage(`${move}Id`, `v${props.id}`))
-  console.log(moveId, `${move}Id`)
+  let storeId = moveJson.storeId;
+  const [ moveId, setMoveId ] = useState(useLocalStorage(storeId, `v${props.id}`))
+  console.log('INITIAL STATE: ', moveId)
 
   const [ prevLevel, setPrevLevel ] = useState(moveId)
-  const [ levelA, setlevelA ] = useState(1)
-  const [ levelB, setlevelB ] = useState(1)
-  const [ levelC, setlevelC ] = useState(1)
-
-  
+  const [ levelA, setlevelA ] = useState(useLocalStorage(`${storeId}${moveId}lvlA`, 1))
+  const [ levelB, setlevelB ] = useState(useLocalStorage(`${storeId}${moveId}lvlB`, 1))
+  const [ levelC, setlevelC ] = useState(useLocalStorage(`${storeId}${moveId}lvlC`, 1))
 
   function setLevel(e) {
     e.preventDefault()
@@ -22,35 +21,51 @@ function Move(props) {
 
     switch (level) {
       case ("A"):
-        const newLevelA = levelA => levelA + 1
+        const newLevelA = levelA => parseInt(levelA, 10) + 1
+
+        window.localStorage.setItem(
+          `${storeId}${moveId}lvlA`
+          , parseInt(levelA, 10) + 1
+        )
+
         return setlevelA(newLevelA)
       case ("B"):
-        const newLevelB = levelB => levelB + 1
+        const newLevelB = levelB => parseInt(levelB, 10) + 1
+
+        window.localStorage.setItem(
+          `${storeId}${moveId}lvlB`
+          , parseInt(levelB, 10) + 1
+        )
+
         return setlevelB(newLevelB)
       case ("C"):
-        const newLevelC = levelC => levelC + 1
+        const newLevelC = levelC => parseInt(levelC, 10) + 1
+        
+        window.localStorage.setItem(
+          `${storeId}${moveId}lvlC`
+          , parseInt(levelC, 10) + 1
+        )
+
         return setlevelC(newLevelC)
       default: return
     }
   }
-
+  
   function nextLevel() {
-    let tempMove = (parseInt(moveId.split('v', 2)[1] , 10) + 1);
     setPrevLevel(moveId)
-    setMoveId(`v${tempMove}`)
-    console.log(moveId, tempMove, move)
-    let tempMoveName = toString(move) + "Id";
-    window.localStorage.setItem(`${tempMoveName}`, `v${tempMove}`)
+    const nextMove = (parseInt(moveId.split('v', 2)[1] , 10) + 1);
+    setMoveId(`v${nextMove}`)
+    window.localStorage.setItem(storeId, `v${nextMove}`)
   }
 
   function previousLevel() {
-    let tempMove = (parseInt(moveId.split('v', 2)[1] , 10) - 1);
+    const tempMove = (parseInt(moveId.split('v', 2)[1] , 10) - 1);
     setPrevLevel(tempMove - 1)
     setMoveId(`v${tempMove}`)
     setlevelA(5)
     setlevelB(5)
     setlevelC(5)
-    window.localStorage.setItem(`${move}Id`, `v${tempMove}`)
+    window.localStorage.setItem(storeId, `v${tempMove}`)
   }
 
   function generateMoves(_move) {

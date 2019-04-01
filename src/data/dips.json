@@ -1,5 +1,6 @@
 {
   "name": "Dips",
+  "storeId": "dipsId",
   "versions": [
     {
       "id":   "v1",

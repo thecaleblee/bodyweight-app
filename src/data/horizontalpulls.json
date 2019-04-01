@@ -1,5 +1,6 @@
 {
   "name": "Horizontal Pulls",
+  "storeId": "horizontalpullsId",
   "versions": [
     {
       "id":   "v1",

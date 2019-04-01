@@ -1,5 +1,6 @@
 {
   "name": "Pull Ups",
+  "storeId": "pullupsId",
   "versions": [
     {
       "id":   "v1",

@@ -1,5 +1,6 @@
 {
-  "name": "Squats",
+  "name": "Handstand Push Ups",
+  "storeId": "handstandpushupsId",
   "versions": [
     {
       "id":   "v1",
