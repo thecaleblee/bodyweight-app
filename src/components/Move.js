@@ -1,16 +1,20 @@
 import React, { useState, useEffect } from 'react'
 import Image from '../components/Image'
 import useLocalStorage from '../components/useLocalStorage' 
+
 function Move(props) {
-  const [ moveId, setMoveId ] = useState(useLocalStorage("moveId", `v${props.id}`))
+  let move = props.name 
+  const moveJson = require(`../data/${move}.json`)
+
+  const [ moveId, setMoveId ] = useState(useLocalStorage(`${move}Id`, `v${props.id}`))
+  console.log(moveId, `${move}Id`)
 
   const [ prevLevel, setPrevLevel ] = useState(moveId)
   const [ levelA, setlevelA ] = useState(1)
   const [ levelB, setlevelB ] = useState(1)
   const [ levelC, setlevelC ] = useState(1)
 
-  let move = props.name 
-  const moveJson = require(`../data/${move}.json`)
+  
 
   function setLevel(e) {
     e.preventDefault()
@@ -34,16 +38,19 @@ function Move(props) {
     let tempMove = (parseInt(moveId.split('v', 2)[1] , 10) + 1);
     setPrevLevel(moveId)
     setMoveId(`v${tempMove}`)
+    console.log(moveId, tempMove, move)
+    let tempMoveName = toString(move) + "Id";
+    window.localStorage.setItem(`${tempMoveName}`, `v${tempMove}`)
   }
 
   function previousLevel() {
     let tempMove = (parseInt(moveId.split('v', 2)[1] , 10) - 1);
     setPrevLevel(tempMove - 1)
-    console.log(tempMove);
     setMoveId(`v${tempMove}`)
     setlevelA(5)
     setlevelB(5)
     setlevelC(5)
+    window.localStorage.setItem(`${move}Id`, `v${tempMove}`)
   }
 
   function generateMoves(_move) {
